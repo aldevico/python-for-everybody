@@ -20,7 +20,7 @@ maxauthor = dict()
 
 for line in text:
     line.rstrip()
-    if not line.startswith("From "): continue
+    if not line.startswith("From: "): continue
     words = line.split()
     maxauthor[words[1]] = maxauthor.get(words[1],0)+1
 
